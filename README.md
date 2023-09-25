@@ -2,11 +2,9 @@
 
 ### Date created
 Sep. 23rd, 2023
-
+---
 ### Project Title
 **Bikeshare** Project
-
-![Bikeshare image](/home/workspace/bike vector.png)
 
 ***
 ### Description
