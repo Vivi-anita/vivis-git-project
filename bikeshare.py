@@ -15,10 +15,10 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('**Hello!** Let\'s explore some US bikeshare data!')
     
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    cities = ("chicago", "new york city", "washington")
+    cities = ("_chicago_", "_new york city_", "_washington_")
     while True:
         city = input("Which city do you want to analize: Chicago, New York City, or Washington:\n").lower()
         if city in cities:
@@ -85,7 +85,7 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
-    print('\nCalculating The Most Frequent Times of Travel...\n')
+    print('\nCalculating The **Most** Frequent Times of Travel...\n')
     start_time = time.time()
     # TO DO: display the most common month
     common_month = df['month'].mode()
@@ -103,7 +103,7 @@ def time_stats(df):
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
-    print('\nCalculating The Most Popular Stations and Trip...\n')
+    print('\nCalculating The **Most** Popular Stations and Trip...\n')
     start_time = time.time()
     # TO DO: display most commonly used start station
     used_start_station = df['Start Station'].mode()
@@ -146,21 +146,21 @@ def user_stats(df):
     # TO DO: Display counts of gender
     try:
         gender_count = df['Gender'].value_counts()
-        print("The counts of gender is:\n", gender_count)
+        print("The counts of **gender** is:\n", gender_count)
     except:
         print("There is no avalable gender data for Washignton city.\n")
     # TO DO: Display earliest, most recent, and most common year of birth
     try:
         earliest_YOB = df['Birth Year'].min()
-        print("The earliest year of birth is:", round(earliest_YOB))
+        print("The **earliest** year of birth is:", round(earliest_YOB))
 
         recent_YOB = df['Birth Year'].max()
-        print("The most recent year of birth is:", round(recent_YOB))
+        print("The **most** recent year of birth is:", round(recent_YOB))
 
         most_common_YOB = df['Birth Year'].mode()
         print("The most common year of birth is:", round(most_common_YOB))
     except:
-        print("There is no available birth data for Washington city.\n")
+        print("There is **no** available birth data for Washington city.\n")
         
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -179,7 +179,7 @@ def raw_data(df):
             top_data = input("Would you like to continue analizing data? Enter yes or no.\n").lower()
             x += 5
         else:
-            top_data = input("Invalid input. Please enter 'yes' or 'no' only.\n").lower()
+            top_data = input("**Invalid input.** Please enter 'yes' or 'no' only.\n").lower()
      
     
 def main():
@@ -194,7 +194,7 @@ def main():
         raw_data(df)
         
         
-        restart = input('\nWould you like to restart? Enter yes or no. \n')
+        restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes': 
             break
 
