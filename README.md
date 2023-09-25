@@ -2,6 +2,7 @@
 
 ### Date created
 Sep. 23rd, 2023
+
 ---
 ### Project Title
 **Bikeshare** Project
@@ -17,5 +18,6 @@ This project enables the user to explore data related to bike share systems for 
 - washington.csv
 ***
 ### Credits
-Udacity [Visit website] (https://www.udacity.com)
+Udacity 
+![Visit website](https://www.udacity.com)
 
