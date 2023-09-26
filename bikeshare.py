@@ -136,7 +136,9 @@ def user_stats(df):
         gender_count = df['Gender'].value_counts()
         print("The counts of **gender** is:\n", gender_count)
     except:
-        print("There is no avalable gender data for Washignton city.\n")
+
+        print("There is _no_ avalable gender data for Washignton city.\n")
+
     
     try:
         earliest_YOB = df['Birth Year'].min()
@@ -146,7 +148,7 @@ def user_stats(df):
         print("The **most** recent year of birth is:", round(recent_YOB))
 
         most_common_YOB = df['Birth Year'].mode()
-        print("The most common year of birth is:", round(most_common_YOB))
+        print("The **most** common year of birth is:", round(most_common_YOB))
     except:
         print("There is **no** available birth data for Washington city.\n")
         
